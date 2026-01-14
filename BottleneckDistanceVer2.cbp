@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="BottleneckDistanceVer2" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/BottleneckDistanceVer2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++20" />
+					<Add option="-g" />
+					<Add option="-static" />
+					<Add directory="include" />
+					<Add directory="include/CloudIsometry" />
+					<Add directory="include/CloudIsometry/Invariants" />
+					<Add directory="include/Bottleneckdistance" />
+					<Add directory="include/Bottleneckdistance/Misc" />
+					<Add directory="include/Experiments" />
+				</Compiler>
+				<Linker>
+					<Add library="pthread" />
+					<Add library="armadillo" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/BottleneckDistanceVer2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include/CloudIsometry" />
+					<Add directory="include/CloudIsometry/Invariants" />
+					<Add directory="include/Bottleneckdistance" />
+					<Add directory="include/Bottleneckdistance/Misc" />
+					<Add directory="include/Experiments" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/BS_thread_pool.hpp" />
+		<Unit filename="include/Bottleneckdistance/Algorithms/BoostBottleneck.h" />
+		<Unit filename="include/Bottleneckdistance/Algorithms/Classic/BottleneckCalculator.h" />
+		<Unit filename="include/Bottleneckdistance/Algorithms/Classic/Graph_Matching.h" />
+		<Unit filename="include/Bottleneckdistance/Algorithms/Classic/Layered_neighbors_finder.h" />
+		<Unit filename="include/Bottleneckdistance/Misc/Bipartie_Graph.h" />
+		<Unit filename="include/Bottleneckdistance/Misc/EuclideanBDCompute.h" />
+		<Unit filename="include/Bottleneckdistance/Misc/GraphTreeController.h" />
+		<Unit filename="include/Bottleneckdistance/Misc/GraphTreeControllerVector.h" />
+		<Unit filename="include/Bottleneckdistance/Misc/rtreeController.h" />
+		<Unit filename="include/Bottleneckdistance/Misc/rtree_graph.h" />
+		<Unit filename="include/Bottleneckdistance/bd_general_interface.h" />
+		<Unit filename="include/CloudIsometry/GeneralInvariantMethods.h" />
+		<Unit filename="include/CloudIsometry/Invariants/NCDGrab.h" />
+		<Unit filename="include/CloudIsometry/Invariants/NCDGrabber.h" />
+		<Unit filename="include/CloudIsometry/Invariants/NCD_Graph.h" />
+		<Unit filename="include/CloudIsometry/Invariants/NCD_Graph_Connections.h" />
+		<Unit filename="include/CloudIsometry/Invariants/NCD_Smart.h" />
+		<Unit filename="include/CloudIsometry/Invariants/NCD_Smart_Update.h" />
+		<Unit filename="include/CloudIsometry/Invariants/PBI.h" />
+		<Unit filename="include/CloudIsometry/Invariants/PBI_Old.h" />
+		<Unit filename="include/CloudIsometry/Invariants/PBI_Original.h" />
+		<Unit filename="include/CloudIsometry/Invariants/PBI_Update.h" />
+		<Unit filename="include/CloudIsometry/Invariants/PBI_VD.h" />
+		<Unit filename="include/CloudIsometry/Invariants/SCD.h" />
+		<Unit filename="include/CloudIsometry/Invariants/SCD_Updated.h" />
+		<Unit filename="include/CloudIsometry/Invariants/vectorTools.h" />
+		<Unit filename="include/CloudIsometry/Nested_Abstract.h" />
+		<Unit filename="include/CloudIsometry/Nested_Base.h" />
+		<Unit filename="include/CloudIsometry/Nested_Updated.h" />
+		<Unit filename="include/CloudIsometry/Original_Base.h" />
+		<Unit filename="include/Experiments/ExperimentRunner.h" />
+		<Unit filename="include/Experiments/ExtraExperiments.h" />
+		<Unit filename="include/Experiments/GraphExperiments.h" />
+		<Unit filename="include/header.hpp" />
+		<Unit filename="main.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
